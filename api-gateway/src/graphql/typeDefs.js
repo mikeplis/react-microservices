@@ -5,10 +5,19 @@ const typeDefs = gql`
     listings: [Listing!]!
   }
 
+  type Mutation {
+    createUser(email: String!, password: String!): User!
+  }
+
   type Listing {
     id: ID!
     title: String!
     description: String!
+  }
+
+  type User {
+    email: String!
+    id: ID!
   }
 `;
 
