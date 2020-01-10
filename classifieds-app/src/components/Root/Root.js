@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Login from "./Login";
 
 const Container = styled.div`
   display: flex;
@@ -30,7 +31,9 @@ function Root() {
     <Wrapper>
       <Container>
         <Content>Listings</Content>
-        <Sidebar>Account Details</Sidebar>
+        <Sidebar>
+          <Login />
+        </Sidebar>
       </Container>
     </Wrapper>
   );
