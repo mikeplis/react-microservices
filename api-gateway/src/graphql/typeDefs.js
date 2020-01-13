@@ -5,6 +5,7 @@ const typeDefs = gql`
 
   type Query {
     listings: [Listing!]!
+    userSession(me: Boolean!): UserSession
   }
 
   type Mutation {
