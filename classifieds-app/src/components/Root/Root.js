@@ -7,6 +7,7 @@ import graphqlClient from "#root/api/graphqlClient";
 import { setSession } from "#root/store/ducks/session";
 
 import AccountDetails from "./AccountDetails";
+import Listings from "./Listings";
 
 const Container = styled.div`
   display: flex;
@@ -64,7 +65,9 @@ function Root() {
   return (
     <Wrapper>
       <Container>
-        <Content>Listings</Content>
+        <Content>
+          <Listings />
+        </Content>
         <Sidebar>
           <AccountDetails />
         </Sidebar>

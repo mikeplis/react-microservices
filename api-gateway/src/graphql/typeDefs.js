@@ -12,6 +12,7 @@ const typeDefs = gql`
     createUser(email: String!, password: String!): User!
     createUserSession(email: String!, password: String!): UserSession!
     deleteUserSession(sessionId: ID!): Boolean!
+    createListing(description: String!, title: String!): Listing!
   }
 
   type Listing {
